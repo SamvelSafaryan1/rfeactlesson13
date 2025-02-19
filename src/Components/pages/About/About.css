@@ -1,0 +1,16 @@
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.prod{
+    width: 250px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 16px;
+}
