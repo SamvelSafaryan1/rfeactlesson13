@@ -3,9 +3,10 @@ import './Header.css'
 
 function Header(){
     return(
-        <div className='header'>
+        <nav>
             <NavLink to='/about'>Products</NavLink>
-        </div>
+        </nav>
+        
     )
 }
 

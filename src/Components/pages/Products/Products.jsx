@@ -3,15 +3,17 @@ import { useParams } from 'react-router-dom'
 
 function Products(props){
     let {id} = useParams()
-    let product = props.products[id]
-    return(
-        <div>
-            <p>{product.title}</p>
-            <img src={product.image} width={250} alt="" />
-            <p>{product.description}</p>
-            <p>{product.price}</p>
-            <button>Buy</button>
-        </div>
+    let product = props.products.find((elem) => elem.id === +id)
+    
+    
+    return(    
+            <div>
+                <p>{props.products.title}</p>
+                <img src={props.products.image} width={250} />
+                <p>{props.products.description}</p>
+                <p>{props.products.price}</p>
+                <button>Buy</button>
+            </div>
     )
 }
 
